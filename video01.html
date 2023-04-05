@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <style>
+         *{
+            margin:0px;
+            padding:0px;
+            font-family:'poppins',sans-serif;
+        }
+        body{
+            width:100%;
+            height:90vh;
+           background-image:linear-gradient(to right, rgb(13, 13, 13,1),transparent),url(./img/neon4.jpeg);
+           background-size: cover;
+        }
+        #top{
+           /* background-color:rgb(34, 1, 1);*/
+            height:5em;
+            text-align: center;
+            padding-top:20px;
+
+        }
+        nav{
+            flex:1;
+            text-align:right;
+            padding-right:30px;
+        }
+        nav ul li{
+            display:inline-block;
+            list-style:none;
+            margin:10px 30px;
+            color:white;
+        }
+        nav ul li a{
+            color:white;
+            text-decoration:none;
+            position: relative;
+        }
+        nav ul li a::after{
+            content:'';
+            width:0%;
+            height:3px;
+            position:absolute;
+            bottom:-10px;
+            left:50%;
+            transform:translateX(-50%);
+            background:white;
+            transition:width 0.3s;
+        }
+        nav ul li a:hover::after{
+            width:50%;
+        }
+        #head{
+            position:absolute;
+            left:40px;
+            top:30px;
+            color:white;
+            font-size:40px; 
+        }
+        .img1{
+            grid-area:IMG1;
+        }
+        .img2{
+            grid-area:IMG2;
+        }
+        .img3{
+            grid-area:IMG3;
+        }
+        .img4{
+            grid-area:IMG4;
+        }
+        .img5{
+            grid-area:IMG5;
+        }
+        .img6{
+            grid-area:IMG6;
+        }
+        .img7{
+            grid-area:IMG7;
+        }
+        .img8{
+            grid-area:IMG8;
+        }
+        .img9{
+            grid-area:IMG9;
+        }
+        .img10{
+            grid-area:IMG10;
+        }
+        #flex_value{
+            color:white;
+            padding-left:0px;
+            display:grid;
+            grid-template-areas:'IMG1 IMG2 IMG3 IMG4 IMG5''IMG6 IMG7 IMG8 IMG9 IMG10';
+
+        }
+        #flex_value>div{
+            margin:15px;
+        }
+        #header{
+            color:white;
+            padding-left:30px;
+            padding-top:15px;
+        }
+        #v1{
+           background-color: black;
+        }
+        #v2{
+           margin-top:15px;
+           margin-left:30px;
+        }
+        #v2 h2{
+            color:white;
+            font-size:30px;
+        }
+        #v2 p{
+            color: rgb(229, 229, 229);
+            margin-top: 10px;
+        }
+        #nav2{
+            display: inline-block;
+        }
+        nav ul li #i1{
+            position: absolute;
+            top:700px;
+            left:60px;
+            font-size:50px;
+            color: white;
+        }
+        nav ul li #i2{
+           position: absolute;
+           top:800px;
+           color:white;
+        }
+        #sub{
+            font-size: 20px;
+            position: absolute;
+            left:0px;
+            font-style: normal;
+        }
+        #a{
+            font-size: 50px;
+        }
+        #para1{
+            color:white;
+            font-size: 10px;
+            padding-top:1px;
+            padding-left:15px;
+        }
+    </style>
+</head>
+<body>
+    <div id="top">
+        <h1 id="head">PRIMESTAR</h1>
+    <nav>
+        <ul>
+            <li><a href="music.html">Music</a></li>
+            <li><a href="movies.html">Movie</a></li>
+            <li><a href="home.html">Home</a></li>
+        </ul>
+    </nav>
+    </div>
+    <div id="v1">
+        <video src="./img/sitaraman.mp4" controls muted loop width="100%" height="480px"></video>
+    </div>
+    <div id="v2">
+        <h2>Sita Raman</h2>
+        <p>Tamil | Historical drama | 2022 </p>
+        <p>Sita Raman narrates a love story through letters between Prince Noor Jahan and Lieutenant Ram</p>
+        <nav id="nav2">
+            <ul>
+                <li><i class="fa-thin fa-plus" id="i1"></i></li>
+                <li><i class="fa-thin fa-share-all" id="i2"></i></li>
+                <i class="fa-light fa-heart" id="a"></i>
+            </ul>
+        </nav>
+        <p id="para1">WATCHLIST</p>
+       
+    </div>
+</body>
+</html>

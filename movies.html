@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+            font-family:'poppins',sans-serif;
+        }
+        body{
+            width:100%;
+            height:90vh;
+           background-image:linear-gradient(to right, rgb(13, 13, 13,1),transparent),url(./img/neon4.jpeg);
+           background-size: cover;
+        }
+        #top{
+           /* background-color:rgb(34, 1, 1);*/
+            height:5em;
+            text-align: center;
+            padding-top:20px;
+
+        }
+        nav{
+            flex:1;
+            text-align:right;
+            padding-right:30px;
+        }
+        nav ul li{
+            display:inline-block;
+            list-style:none;
+            margin:10px 30px;
+            color:white;
+        }
+        nav ul li a{
+            color:white;
+            text-decoration:none;
+            position: relative;
+        }
+        nav ul li a::after{
+            content:'';
+            width:0%;
+            height:3px;
+            position:absolute;
+            bottom:-10px;
+            left:50%;
+            transform:translateX(-50%);
+            background:white;
+            transition:width 0.3s;
+        }
+        nav ul li a:hover::after{
+            width:50%;
+        }
+        #head{
+            position:absolute;
+            left:40px;
+            top:30px;
+            color:white;
+            font-size:40px; 
+        }
+        .img1{
+            grid-area:IMG1;
+        }
+        .img2{
+            grid-area:IMG2;
+        }
+        .img3{
+            grid-area:IMG3;
+        }
+        .img4{
+            grid-area:IMG4;
+        }
+        .img5{
+            grid-area:IMG5;
+        }
+        .img6{
+            grid-area:IMG6;
+        }
+        .img7{
+            grid-area:IMG7;
+        }
+        .img8{
+            grid-area:IMG8;
+        }
+        .img9{
+            grid-area:IMG9;
+        }
+        .img10{
+            grid-area:IMG10;
+        }
+        #flex_value{
+            color:white;
+            padding-left:0px;
+            display:grid;
+            grid-template-areas:'IMG1 IMG2 IMG3 IMG4 IMG5''IMG6 IMG7 IMG8 IMG9 IMG10';
+
+        }
+        #flex_value>div{
+            margin:15px;
+        }
+        #header{
+            color:white;
+            padding-left:30px;
+            padding-top:15px;
+        }
+        #flex_value img{
+          border-radius:10px;   
+          transition:transform 0.3s ease,opacity 0.3s ease;
+
+        }
+        #flex_value img:hover{
+            transform: translateY(-20px);
+        }
+        #flex_value h2{
+            font-size:15px;
+        }
+    </style>
+</head>
+<body>
+    <div id="top">
+        <h1 id="head">PRIMESTAR</h1>
+    <nav>
+        <ul>
+            <li><a href="music.html">Music</a></li>
+            <li><a href="movies.html">Movie</a></li>
+            <li><a href="home.html">Home</a></li>
+        </ul>
+    </nav>
+    </div>
+    <div id="header">
+        <h2>Popular Actors</h2>
+    </div>
+    <div id="flex_value">
+                <div class="img1" id=""><a href="video01.html"><img src="./img/sitaraman2.jpg" alt="vijay" width="270" height="290"></a><br><center><h2>SITA RAMAN</h2></center></div>
+                <div class="img2"><a href="./audio2.html"><img src="./img/vtk1.jpg" alt="vijay" width="270" height="300"></a><br><center><h2>VENTHU THANINTHATHU KAADU</h2></center></div>
+                <div class="img3"><a href="./audio3.html"><img src="./img/valimai2.jpg" alt="vijay" width="270" height="300"></a><br><center><h2>VALIMAI</h2></center></div>
+                <div class="img4"><a href="./audio4.html"><img src="./img/doctor1.jpg" alt="vijay" width="270" height="300"></a><br><center><h2>DOCTOR</h2></center></div>
+                <div class="img5"><a href="./audio5.html"><img src="./img/kaithi2.jpg" width="270" height="300"></a><br><center><h2>KAITHI</h2></center></div>
+                <div class="img6"><a href="./audio6.html"><img src="./img/master3.jpg" width="270" height="300"></a><br><center><h2>MASTER</h2></center></div>
+                <div class="img7"><a href="./audio7.html"><img src="./img/vv2.jpg" alt="vijay" width="270" height="300"></a><br><center><h2>VIKRAM VEDHA</h2></center></div>
+                <div class="img8"><a href="./audio8.html"><img src="./img/sp2.jpg" alt="vijay" width="270" height="300"></a><br><center><h2>SOORARAI POTRU</h2></center></div>
+                <div class="img9"><a href="./audio9.html"><img src="./img/t2.jpg" alt="vijay" width="270" height="300"></a><br><center><h2>THIRUCHUTRAMBALAM</h2></center></div>
+                <div class="img10"><a href="./audio10.html"><img src="./img/krk2.jpg" alt="vijay" width="270" height="300"></a><br><center><h2>KAATHU VAAKULA RENDU KADHAL</h2></center></div>
+     </div>
+</body>
+</html>

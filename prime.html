@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./external.css">
+    <title>Document</title>
+    <script src="login.js"></script>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+            font-family: sans-serif;
+        }
+        fieldset{
+            width: 50vh;
+            border-color:white;
+        }
+        body{
+            margin-top: 10%;
+            background-image:linear-gradient(to right, rgb(13, 13, 13,1),transparent),url(./img/Marvel.jpeg);
+        }
+       #main>h1{
+            text-decoration: wavy;
+        }
+        #i1{
+            border:none;
+            border-radius:10px;
+            box-shadow:0px 0px 10px grey;
+            width:300px;
+            height:340px;
+            background-color: rgba(black,black, black, 0.9px);
+            padding:30px;
+            margin-top:25px;
+            padding-left:60px;
+            margin:1cm;
+            position: absolute;
+           left:33%;
+            top:15%;
+            color: white;
+        }
+        #main{
+           position: absolute;
+          top: 80px;
+          left:41%;
+          
+        }
+        .in{
+            border:none;
+            background: none;
+            border-bottom:2px solid rgb(238, 237, 237);
+            margin:0px;
+            width:260px;
+            margin-left:0px;
+            height:50px;
+            outline:none;
+            background-color: transparent;
+            color: white;
+    
+        }
+        label{
+            font-size:18px;
+            
+        }
+        #s1{
+            margin-top:0px;
+            width:260px;
+            height: 1cm;
+            border-radius:20px;
+            border:none;
+            box-shadow:0px 0px 10px grey;
+            background-color: rgb(84, 7, 7);
+            color:white;
+            position: absolute;
+            left:60px;
+            
+        }
+        #s1:hover{
+            background-color: rgb(195, 79, 79);
+        }
+        #d1{
+            margin-top: 15px;
+        }
+        #l1{
+            font-size:15px;
+            padding-left:150px;
+            margin-top:10px;
+            color: aliceblue;
+        }
+        #l1:link{
+            text-decoration: none;
+        }
+        h2{
+            color: white;
+            margin-left: 100px;
+        }
+        h1{
+            color: transparent;
+            -webkit-text-stroke: 1px white;
+            font-size: 40px;
+            padding-left: 0px;
+        }
+        a{
+            color:aliceblue;
+        }
+    </style>
+</head>
+<body>
+    
+        <div id="main">
+        <h1>PRIMESTAR</h1>
+    </div>
+        <div id="i1">
+        
+        <h2>Signin</h2>
+         <br>
+         <form action="home.html">
+          <label for="">Enter Username</label>
+         <br>
+           <input type="text" placeholder="Type Your Username"  class="in" color="white" id="username">
+           <br>
+           <br>
+           <label for="">Enter Password</label>
+           <br>
+           
+           <input type="password" placeholder="Type Your Password" class="in" id="password">
+           <br>
+           <br>
+            <a href="./forgot.html" id="l1">Forgot Password?</a>
+           <br>
+           <br>
+           <button  id="s1">submit</button> 
+        </form>
+       
+           <br>
+           <br>
+           <div id="d1">
+           
+        </div>
+       
+        </div>
+   
+</body>
+</html>

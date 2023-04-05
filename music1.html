@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <style>
+         *{
+            margin:0px;
+            padding:0px;
+            font-family:'poppins',sans-serif;
+        }
+        body{
+            background-image:linear-gradient(to right, rgb(13, 13, 13,1),transparent),url(./img/neon4.jpeg);
+           background-size: cover;
+
+        }
+        #top{
+          
+            height:5em;
+            text-align: center;
+            padding-top:20px;
+            margin:10px;
+        }
+        nav{
+            flex:1;
+            text-align:right;
+            padding-right:30px;
+        }
+        nav ul li{
+            display:inline-block;
+            list-style:none;
+            margin:10px 30px;
+            color:white;
+        }
+        nav ul li a{
+            color:white;
+            text-decoration:none;
+            position: relative;
+        }
+        nav ul li a::after{
+            content:'';
+            width:0%;
+            height:3px;
+            position:absolute;
+            bottom:-10px;
+            left:50%;
+            transform:translateX(-50%);
+            background:white;
+            transition:width 0.3s;
+        }
+        nav ul li a:hover::after{
+            width:50%;
+        }
+        #head{
+            position:absolute;
+            left:80px;
+            top:30px;
+            color:white;
+            font-size:40px; 
+        }
+        #main{
+            margin-top:50px;
+            padding-left:80px;
+        
+          
+        }
+        #main_img{
+           margin-left: 50px;
+        }
+        #main_img h1{
+            color:transparent;
+            font-size:60px;
+            position: absolute;
+            top:180px;
+            left:750px;
+            -webkit-text-stroke:1px white;
+           
+        }
+        #main_img img{
+            display: block;
+            margin-top: 70px;
+            margin-left:40px;
+            width: 250px;
+            height:250px;
+          
+           
+        }
+        #main_img img:hover{
+            background-color:rgba(11, 11, 11, 0,7);
+        }
+        hr{
+           margin-left:40px;
+        }
+        #box_model1{
+            height:350px;
+            width:800px;
+            margin-left:330px;
+            background-image:linear-gradient(to left, rgb(13, 13, 13,1),transparent),url(./img/vijy.jpeg);
+            background-size: cover;
+            border:none;
+            color: white;
+        }
+        #box_model2{
+            height:700px;
+            width:800px;
+            margin-left:330px;
+            background-color: rgba(11,12,13,0.5);
+            border:none;
+            color: white;
+        }
+        #icon1{
+              font-size:60px;
+              
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="top">
+        <h1 id="head">PRIMESTAR</h1>
+    <nav>
+        <ul>
+            <li><a href="music.html">Music</a></li>
+            <li><a href="movies.html">Movie</a></li>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+</div>
+    <div id="bg">
+        <fieldset id="box_model1">
+       <div id="main_img">
+        <h1 >Vijay Songs</h1>
+        <i class="fa-light fa-circle-heart" id="icon1"></i>
+       </div>
+       </fieldset>
+       <fieldset id="box_model2">
+     <div id="main">
+        <div id="head">
+       </div>
+        <div id="audio_main">
+            <audio src="./img/alaporan.mp3" controls muted loop></audio>
+    <h2>Alaporan Tamizhan</h2>
+    <marquee>ARRahman,Arivu-Mersal</marquee>
+    <br>
+    <br>
+    <audio src="./img/neethane.mp3" controls muted loop></audio>
+    <h2>Neethane</h2>
+    <marquee>ARRahman Shreya Ghosal-Mersal</marquee>
+    <br>
+    <br>
+    <audio src="./img/vaathi raid.mp3" controls muted loop></audio>
+    <h2>Vaathi raid</h2>
+    <marquee>Anirudh Ravichandran,Arivu-Master</marquee>
+    <br>
+    <br>
+    <audio src="./img/ranjithamey.mp3" controls muted loop></audio>
+    <h2>Ranjithamey</h2>
+    <marquee>Thaman Vijay-Varishu</marquee>
+    <br>
+    <br>
+    <audio src="./img/singapenney.mp3" controls muted loop></audio>
+    <h2>Singapenney</h2>
+    <marquee>Anirudh Ravichandran,Arivu-Bigil</marquee>
+        </div>
+    </div>
+    
+</fieldset>
+</div>
+
+</body>
+</html>

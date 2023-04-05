@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         *{
+            margin:0px;
+            padding:0px;
+            font-family:'poppins',sans-serif;
+        }
+        body{
+            background-image:linear-gradient(to right, rgb(13, 13, 13,1),transparent),url(./img/neon4.jpeg);
+           background-size: cover;
+
+        }
+        #top{
+           /* background-color:rgb(34, 1, 1);*/
+            height:5em;
+            text-align: center;
+            padding-top:20px;
+
+        }
+        nav{
+            flex:1;
+            text-align:right;
+            padding-right:30px;
+        }
+        nav ul li{
+            display:inline-block;
+            list-style:none;
+            margin:10px 30px;
+            color:white;
+        }
+        nav ul li a{
+            color:white;
+            text-decoration:none;
+            position: relative;
+        }
+        nav ul li a::after{
+            content:'';
+            width:0%;
+            height:3px;
+            position:absolute;
+            bottom:-10px;
+            left:50%;
+            transform:translateX(-50%);
+            background:white;
+            transition:width 0.3s;
+        }
+        nav ul li a:hover::after{
+            width:50%;
+        }
+        #head{
+            position:absolute;
+            left:40px;
+            top:30px;
+            color:white;
+            font-size:40px; 
+            
+        }
+        .img1{
+            grid-area:IMG1;
+        }
+        .img2{
+            grid-area:IMG2;
+        }
+        .img3{
+            grid-area:IMG3;
+        }
+        .img4{
+            grid-area:IMG4;
+        }
+        .img5{
+            grid-area:IMG5;
+        }
+        .img6{
+            grid-area:IMG6;
+        }
+        .img7{
+            grid-area:IMG7;
+        }
+        .img8{
+            grid-area:IMG8;
+        }
+        .img9{
+            grid-area:IMG9;
+        }
+        .img10{
+            grid-area:IMG10;
+        }
+        #flex_value{
+            color:white;
+            padding-left:0px;
+            display:grid;
+            grid-template-areas:'IMG1 IMG2 IMG3 IMG4 IMG5''IMG6 IMG7 IMG8 IMG9 IMG10';
+
+        }
+        #flex_value>div{
+            margin:15px;
+        }
+        #header{
+            color:white;
+            padding-left:30px;
+            padding-top:15px;
+        }
+        #flex_value img{
+          border-radius:10px;   
+        }
+        #flex_value img:hover{
+            transform: scale(1.1);
+            transition: transform 0.3s ease;
+        }
+        #flex_value h2{
+            font-size:20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="top">
+        <h1 id="head">PRIMESTAR</h1>
+    <nav>
+        <ul>
+            <li><a href="music.html">Music</a></li>
+            <li><a href="movies.html">Movie</a></li>
+            <li><a href="home.html">Home</a></li>
+        </ul>
+    </nav>
+</div>
+    <div id="header">
+        <h2>Popular Actors</h2>
+    </div>
+    <div id="flex_value">
+                <div class="img1" id=""><a href="music1.html"><img src="./img/vj.jpg" alt="vijay" width="270" height="300"></a><br><center><h2>VIJAY</h2></center></div>
+                <div class="img2"><a href="music1.html"><img src="./img/sk.jpg" alt="vijay" width="270" height="300"></a><br><center><h2>SIVA KARTHIKEYAN</h2></center></div>
+                <div class="img3"><a href="music1.html"><img src="./img/dq.jpg" alt="vijay" width="270" height="300"></a><br><center><h2>DULQUER</h2></center></div>
+                <div class="img4"><a href="music1.html"><img src="./img/d.jpg" alt="vijay" width="270" height="300"></a><br><center><h2>DHANUSH</h2></center></div>
+                <div class="img5"><a href="music1.html"><img src="./img/md.jpg" width="270" height="300"></a><br><center><h2>MADDY</h2></center></div>
+                <div class="img6"><a href="music1.html"><img src="./img/ak.jpg" width="270" height="300"></a><br><center><h2>AJITH KUMAR</h2></center></div>
+                <div class="img7"><a href="music1.html"><img src="./img/vs.jpg" alt="vijay" width="270" height="300"></a><br><center><h2>VIJAY SETHUPATHI</h2></center></div>
+                <div class="img8"><a href="music1.html"><img src="./img/k.jpg" alt="vijay" width="270" height="300"></a><br><center><h2>KARTHIK</h2></center></div>
+                <div class="img9"><a href="music1.html"><img src="./img/s.jpg" alt="vijay" width="270" height="300"></a><br><center><h2>SURYA</h2></center></div>
+                <div class="img10"><a href="music1.html"><img src="./img/str.jpg" alt="vijay" width="270" height="300"></a><br><center><h2>SIMBU</h2></center></div>
+     </div>
+</body>
+</html>
